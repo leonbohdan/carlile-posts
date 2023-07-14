@@ -1,10 +1,24 @@
 <script lang="ts">
-import { Vue, Component } from 'vue-facing-decorator';
+import { Component, Vue } from 'vue-facing-decorator';
 
-@Component({}) 
+@Component({
+  options: {
+    name: 'Counter',
+  },
+})
+
 export default class Counter extends Vue {
+  counter = 1;
 
+  onClick() {
+    this.counter++;
+  }
+
+  mounted() {
+    console.log('this.counter', this.counter);
+  }
 }
+
 </script>
 
 <template>
@@ -12,7 +26,3 @@ export default class Counter extends Vue {
     Counter
   </div>
 </template>
-
-<style scoped>
-
-</style>

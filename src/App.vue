@@ -1,15 +1,13 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-facing-decorator';
 
-@Component({})
-export default class App extends Vue {
-
-}
+@Component
+export default class App extends Vue {}
 </script>
 
 <template>
   <header>
-    <div class="wrapper">
+    <div>
       HelloWorld
 
       <nav>
@@ -25,6 +23,6 @@ export default class App extends Vue {
   </main>
 
   <footer>
-    Footer
+    --- Footer ---
   </footer>
 </template>

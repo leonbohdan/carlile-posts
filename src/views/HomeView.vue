@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Vue, Component } from 'vue-facing-decorator';
+import { Vue, Component, Setup } from 'vue-facing-decorator';
 import Counter from '@/components/Counter.vue';
 
 @Component({
@@ -7,6 +7,7 @@ import Counter from '@/components/Counter.vue';
     Counter,
   },
 })
+
 export default class HomeView extends Vue {
 
 }
@@ -22,6 +23,3 @@ export default class HomeView extends Vue {
   </div>
 </template>
 
-<style scoped>
-
-</style>

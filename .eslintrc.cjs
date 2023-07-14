@@ -57,7 +57,7 @@ module.exports = {
       'alphabetical': false,
     }],
     'vue/match-component-file-name': [1, {
-      'extensions': ['vue', 'js'],
+      'extensions': ['vue', 'js', 'tsx'],
     }],
     'vue/component-name-in-template-casing': ['error', 'PascalCase', {
       'registeredComponentsOnly': true,
